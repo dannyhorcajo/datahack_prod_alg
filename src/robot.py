@@ -64,3 +64,16 @@ class Robot(ABC):
     def beep():
         """Play a beep sound."""
         print("Beep!")
+
+    @abstractmethod
+    def dance():
+        """Play a dance music."""
+        print("Dance!")
+
+    @abstractmethod
+    def sing(song=None):
+        """Play a singing music."""
+        if song:
+            print(f"Singing {song} (8)")
+        else:
+            print("Hello darkness my old friend...")
