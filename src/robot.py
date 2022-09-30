@@ -63,3 +63,13 @@ class Robot(ABC):
     def beep():
         """Play a beep sound."""
         print("Beep!")
+
+    @abstractmethod
+    def dance():
+        """Play a dance music."""
+        print("Dance!")
+
+    @abstractmethod
+    def sing():
+        """Play a singing music."""
+        print("Hello darkness my old friend...")
