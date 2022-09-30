@@ -27,7 +27,8 @@ class Robot(ABC):
             w: Angular velocity of the robot center [rad/s].
 
         """
-        pass
+        # TODO Implement angular velocity
+        return self.position[0] + v*0.1
 
     @abstractmethod
     def sense(self):
