@@ -356,12 +356,13 @@ class Map:
         return row, col
 
     def find_waldo(self) -> Tuple[float, float]:
-        """Finds the position of Waldo.
+        """Finds the position of Waldo in the map.
 
         Returns:
             position: (x, y) [m].
 
         """
+        print('Finding Waldo...')
         return tuple(np.random.randint(-100, 100, 2))
 
 

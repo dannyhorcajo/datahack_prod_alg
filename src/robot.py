@@ -27,8 +27,13 @@ class Robot(ABC):
             w: Angular velocity of the robot center [rad/s].
 
         """
+<<<<<<< HEAD
         new_position = tuple(np.random.randint(-100, 100, 2))
         self.position = new_position
+=======
+        # TODO Implement angular velocity
+        return self.position[0] + v*0.1
+>>>>>>> development
 
     @abstractmethod
     def sense(self):
@@ -64,3 +69,16 @@ class Robot(ABC):
     def beep():
         """Play a beep sound."""
         print("Beep!")
+
+    @abstractmethod
+    def dance():
+        """Play a dance music."""
+        print("Dance!")
+
+    @abstractmethod
+    def sing(song=None):
+        """Play a singing music."""
+        if song:
+            print(f"Singing {song} (8)")
+        else:
+            print("Hello darkness my old friend...")
