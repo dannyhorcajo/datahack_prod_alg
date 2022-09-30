@@ -6,6 +6,8 @@ from sklearn.datasets import make_blobs
 from sklearn.preprocessing import StandardScaler
 
 # Tests in main: OK
+# Tests in release: OK
+# Tests in DEV: OK
 
 # #############################################################################
 # Generate sample data
