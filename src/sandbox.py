@@ -5,6 +5,7 @@ from sklearn import metrics
 from sklearn.datasets import make_blobs
 from sklearn.preprocessing import StandardScaler
 
+# Tests in release: OK
 
 # #############################################################################
 # Generate sample data
