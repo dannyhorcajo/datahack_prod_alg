@@ -27,13 +27,8 @@ class Robot(ABC):
             w: Angular velocity of the robot center [rad/s].
 
         """
-<<<<<<< HEAD
         new_position = tuple(np.random.randint(-100, 100, 2))
         self.position = new_position
-=======
-        # TODO Implement angular velocity
-        return self.position[0] + v*0.1
->>>>>>> development
 
     @abstractmethod
     def sense(self):
