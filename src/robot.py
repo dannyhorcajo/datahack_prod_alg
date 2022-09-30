@@ -16,6 +16,7 @@ class Robot(ABC):
         self._client_id = client_id
         self._track = track
         self._wheel_radius = wheel_radius
+        self.position = (0, 0, 0)
 
     @abstractmethod
     def move(self, v: float, w: float):
@@ -32,3 +33,33 @@ class Robot(ABC):
     def sense(self):
         """Acquire sensor readings."""
         pass
+
+    @abstractmethod
+    def stop(self):
+        """Stop the robot."""
+        pass
+
+    @abstractmethod
+    def get_position(self):
+        """Get the robot position.
+
+        Returns:
+            The robot position.
+
+        """
+        return self.position
+
+    @abstractmethod
+    def set_position(self, position: tuple):
+        """Set the robot position.
+
+        Args:
+            position: The robot position.
+
+        """
+        self.position = position
+
+    @abstractmethod
+    def beep():
+        """Play a beep sound."""
+        print("Beep!")
