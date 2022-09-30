@@ -70,6 +70,9 @@ class Robot(ABC):
         print("Dance!")
 
     @abstractmethod
-    def sing():
+    def sing(song=None):
         """Play a singing music."""
-        print("Hello darkness my old friend...")
+        if song:
+            print(f"Singing {song} (8)")
+        else:
+            print("Hello darkness my old friend...")
