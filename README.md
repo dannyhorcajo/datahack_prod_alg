@@ -38,5 +38,4 @@ Steps:
 
 ### Git commit history tree view:
 
-![Git commit history](https://github.com/dannyhorcajo/
-datahack_prod_alg/blob/main/src/img/git_history.jpg?raw=true)
+![Git commit history](https://github.com/dannyhorcajo/datahack_prod_alg/blob/main/src/img/git_history.jpg?raw=true)
